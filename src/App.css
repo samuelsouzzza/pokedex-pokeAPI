@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans'
+}
+.app{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #18191B;
+}

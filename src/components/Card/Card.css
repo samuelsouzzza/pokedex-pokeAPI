@@ -1,0 +1,97 @@
+.containerCard{
+    background-color: #fff;
+    color: #2C2D2F;
+    max-height: auto;
+    width: 300px;
+    padding: .7%;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+.spanIdPokemon{
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #80A2CD;
+    margin-right: 5%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.namePokemon{
+    font-size: 1.25rem;
+    font-weight: normal;
+    align-self: center;
+    justify-self: center;
+    text-transform: capitalize;
+    color: #2C2D2F;
+}
+.typePokemon{
+    background-color: #80A2CD;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: auto;
+    height: 35px;
+    padding: 0 2.5%;
+    text-transform: capitalize;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.imgPokemon{
+    width: 60%;
+}
+.boxStats{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lblHp,
+.lblAtk,
+.lblDef,
+.lblWeight{
+    min-width: 90px;;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #fff;
+    margin: .5% .1%;
+}
+.lblHp{
+    background-color: #3E95FF;
+}
+.lblAtk{
+    background-color: #FF9466;
+}
+.lblDef{
+    background-color: #FE6D70;
+}
+.lblWeight{
+    background-color: #54B576;
+}
+
+.iconFontAwesome{
+    margin: 0 5% 0 0;
+}
+p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
