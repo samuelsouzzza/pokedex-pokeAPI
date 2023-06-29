@@ -1,11 +1,10 @@
 .containerCard{
-    background-color: #fff;
-    color: #2C2D2F;
+    background-color: #2C2D2F;
     max-height: auto;
     width: 300px;
     padding: .7%;
     border: 1px solid #000;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 header{
     display: flex;
@@ -16,7 +15,7 @@ header{
 .spanIdPokemon{
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #80A2CD;
+    background-color: #000;
     margin-right: 5%;
     width: 3rem;
     height: 3rem;
@@ -32,10 +31,10 @@ header{
     align-self: center;
     justify-self: center;
     text-transform: capitalize;
-    color: #2C2D2F;
+    color: #fff;
 }
 .typePokemon{
-    background-color: #80A2CD;
+    background-color: #000;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -74,29 +73,70 @@ main{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
     border-radius: 50px;
+    background-color: #2C2D2F;
+    border: none;
+    border-bottom: 1px solid #f00;
+    margin: 10% 0;
     color: #fff;
-    margin: .5% .1%;
+    margin: 2%;
 }
-.lblHp{
-    background-color: #3E95FF;
-}
-.lblAtk{
-    background-color: #FF9466;
-}
-.lblDef{
-    background-color: #FE6D70;
-}
-.lblWeight{
-    background-color: #54B576;
-}
-
 .iconFontAwesome{
     margin: 0 5% 0 0;
+}
+.iconFontAwesome.search{
+    margin: 0;
 }
 p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.boxSearch{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxSearch input{
+    width: 80%;
+    height: 45px;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: #2C2D2F;
+    border: none;
+    border-bottom: 1px solid red;
+    color: #fff;
+    border-radius: 5px;
+    outline: 0;
+}
+.btnSearch{
+    width: 15%;
+    height: 45px;
+    background-color: #f00;
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1% 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.btnSearch:hover{
+    transform: scale(1.1);
+}
+.btnSearch:disabled{
+    background-color: #2C2D2F;
+    color: #181818;
+}
+.pError{
+    background-color: #2C2D2F;
+    padding: 1%;
+    color: #fff;
+    margin: 1% 0;
+    width: 300px;
+    word-wrap: break-word;
+    text-align: center;
+    border-radius: 5px;
 }

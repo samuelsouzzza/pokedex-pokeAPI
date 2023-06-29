@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans'
+  font-family: 'Noto Sans';
+}
+*::selection{
+  background-color: #f00;
 }
 .app{
   display: flex;

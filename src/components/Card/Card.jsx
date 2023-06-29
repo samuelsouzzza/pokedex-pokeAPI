@@ -7,17 +7,18 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faBurst } from '@fortawesome/free-solid-svg-icons';
 import { faShield } from '@fortawesome/free-solid-svg-icons';
 import { faWeightScale } from '@fortawesome/free-solid-svg-icons';
-
-
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import './Card.css';
 
 const Card = () => {
 
-    const [name, setName] = React.useState('bulbasaur');
+    const [name, setName] = React.useState('');
     const [search, setSearch] = React.useState(name);
     const [pokemon, setPokemon] = React.useState();
     const [loading, setLoading] = React.useState(false);
+    const [error, setError] = React.useState();
+    const [buttonState, setButtonState] = React.useState(true);
 
 
     React.useEffect(() => {
@@ -32,33 +33,47 @@ const Card = () => {
                 setLoading(false);
             }
             catch{
-                console.log('Erro na requisão à API.');
+                setLoading(false);
+                setError('Parece que este pokémon não existe, tente digitar outro nome.');
             }
         }
         searchPokemon();
     }, [name]);
 
+    function handleWrite({target}){
+        setSearch(target.value);
+        (target.value.length == 0) ? setButtonState(true) : setButtonState(false);
+    }
+
     function handleClick(){
         setLoading(true);
         setName(search);
+        setError(null);
     }
     
-    if(pokemon == undefined){
+    if(pokemon == undefined || !name || error){
         return (
-            <div className="boxSearch">
-                    <input type="text" placeholder='Pesquisar Pokémon' value={search} onChange={({target}) => setSearch(target.value)}/>
-                    <button onClick={handleClick}>Pesquisar</button>
-            </div>
+            <>
+                <div className="boxSearch">
+                    <input type="text" placeholder='Pesquisar Pokémon' value={search} onChange={handleWrite}/>
+                    <button onClick={handleClick} disabled={buttonState} className='btnSearch'>
+                        <FontAwesomeIcon icon={faSearch} className='iconFontAwesome search'/>
+                    </button>
+                </div>
+                {error && <p className='pError'>{error}</p> }
+            </>
         )
     }
 
     return (
         <>
             <div className="boxSearch">
-                <input type="text" placeholder='Pesquisar Pokémon' value={search} onChange={({target}) => setSearch(target.value)}/>
-                <button onClick={handleClick}>Pesquisar</button>
+                <input type="text" placeholder='Pesquisar Pokémon' value={search} onChange={handleWrite}/>
+                <button onClick={handleClick} disabled={buttonState} className='btnSearch'>
+                        <FontAwesomeIcon icon={faSearch} className='iconFontAwesome search'/>
+                </button>
             </div>
-
+           {error && <p>{error}</p>}
             <section className='containerCard'>
                 {loading && <Loader />}
                 {!loading  && (
@@ -102,6 +117,7 @@ const Card = () => {
                     </>
                 )}
             </section>
+            
         </>
     )
 }
