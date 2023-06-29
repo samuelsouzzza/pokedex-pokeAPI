@@ -52,6 +52,11 @@ main{
 }
 .imgPokemon{
     width: 60%;
+    transition: .3s;
+    cursor: pointer;
+}
+.imgPokemon:hover{
+    transform: scale(1.25);
 }
 .boxStats{
     width: 95%;
