@@ -20,7 +20,6 @@ const Card = () => {
     const [error, setError] = React.useState();
     const [buttonState, setButtonState] = React.useState(true);
 
-
     React.useEffect(() => {
         async function searchPokemon(){
             try{          
@@ -117,7 +116,6 @@ const Card = () => {
                     </>
                 )}
             </section>
-            
         </>
     )
 }
