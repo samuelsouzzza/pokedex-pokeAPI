@@ -25,7 +25,7 @@ const Card = () => {
             try{          
                 setLoading(true);
 
-                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`);
                 const json = await response.json();
 
                 setPokemon(json);
@@ -48,6 +48,7 @@ const Card = () => {
         setLoading(true);
         setName(search);
         setError(null);
+        setLoading(false);
     }
     
     if(pokemon == undefined || !name || error){
