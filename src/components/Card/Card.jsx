@@ -82,7 +82,7 @@ const Card = () => {
                 {!loading  && (
                     <>
                         <header>
-                            <span className='spanIdPokemon'>{pokemon.id}</span>
+                            <span className='idPokemon'>{pokemon.id}</span>
                             <p className='namePokemon'>{pokemon.name}</p>
                             <p className='typePokemon'>{pokemon.types[0].type.name}</p>
                         </header>

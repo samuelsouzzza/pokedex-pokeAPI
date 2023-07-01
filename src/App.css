@@ -16,5 +16,6 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: #18191B;
+  background-image: url('./assets/imgs/backgroundPokemon2.jpg');
+  background-size: cover;
 }

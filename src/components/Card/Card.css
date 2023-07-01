@@ -6,19 +6,20 @@
         opacity: 1;
     }
 }
-.containerCard{
-    background-color: #2C2D2F;
+.containerCard,
+.pError{
+    background-color: #ff404031;
+    backdrop-filter: blur(3px);
     max-height: auto;
     width: 300px;
     padding: .7%;
-    border: 1px solid #000;
+    border: 1px solid #f00;
     border-radius: 5px;
     height: 325px;
 }
 header,
 main, 
-footer,
-.pError{
+footer{
     animation: fadeIn 1s forwards;
 }
 header{
@@ -27,10 +28,10 @@ header{
     align-items: center;
     width: 100%;
 }
-.spanIdPokemon{
+.idPokemon{
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #000;
+    background-color: #fff;
     margin-right: 5%;
     width: 3rem;
     height: 3rem;
@@ -38,7 +39,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #fff;
+    color: #ff4040;
 }
 .namePokemon{
     font-size: 1.25rem;
@@ -47,10 +48,11 @@ header{
     justify-self: center;
     text-transform: capitalize;
     color: #fff;
+    font-weight: bold;
 }
 .typePokemon{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #ff4040;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +72,7 @@ main{
     cursor: pointer;
 }
 .imgPokemon:hover{
-    transform: scale(1.25);
+    transform: scale(1.5);
 }
 .boxStats{
     width: 95%;
@@ -83,13 +85,14 @@ main{
 .lblAtk,
 .lblDef,
 .lblWeight{
-    min-width: 90px;;
+    min-width: 100px;
+    height: 30px;
     padding: 0 5%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     border-radius: 50px;
-    background-color: #2C2D2F;
+    background-color: #ff4040;
     border: none;
     border-bottom: 1px solid #f00;
     margin: 10% 0;
@@ -119,17 +122,21 @@ p{
     height: 45px;
     font-size: 1.25rem;
     text-align: center;
-    background-color: #2C2D2F;
+    background-color: transparent;
     border: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #f00;
     color: #fff;
     border-radius: 5px;
     outline: 0;
+    backdrop-filter: blur(3px);
+}
+.boxSearch input::placeholder{
+    color: #ffffff71;
 }
 .btnSearch{
     width: 15%;
     height: 45px;
-    background-color: #f00;
+    background-color: #FF2400;
     color: #fff;
     font-size: 1.25rem;
     border: none;
@@ -139,20 +146,17 @@ p{
     transition: .3s;
 }
 .btnSearch:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
+}
+.btnSearch:active{
+    transform: scale(.7);
 }
 .btnSearch:disabled{
-    background-color: #2C2D2F;
-    color: #181818;
+    background-color: transparent;
+    color: #ff404031;
+    transition: .3s;
 }
 .pError{
-    background-color: #2C2D2F;
-    padding: 1%;
     color: #fff;
-    margin: 1% 0;
-    width: 300px;
-    word-wrap: break-word;
     text-align: center;
-    border-radius: 5px;
-    height: 325px;
 }
