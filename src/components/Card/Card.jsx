@@ -91,12 +91,6 @@ const Card = () => {
                         </main>
                         <footer>
                             <div className="boxStats">
-                                <label className='lblHp'>
-                                    <p>
-                                        <FontAwesomeIcon icon={faHeart} className='iconFontAwesome'/>
-                                        <span>{pokemon.stats[0].base_stat}</span>
-                                    </p>
-                                </label>
                                 <label className='lblAtk'>
                                     <p>
                                         <FontAwesomeIcon icon={faBurst} className='iconFontAwesome'/>
@@ -109,10 +103,10 @@ const Card = () => {
                                         <span>{pokemon.stats[2].base_stat}</span>
                                     </p>
                                 </label>
-                                <label className='lblWeight'>
+                                <label className='lblHp'>
                                     <p>
-                                        <FontAwesomeIcon icon={faWeightScale} className='iconFontAwesome'/>
-                                        <span>{pokemon.stats[3].base_stat}</span>
+                                        <FontAwesomeIcon icon={faHeart} className='iconFontAwesome'/>
+                                        <span>{pokemon.stats[0].base_stat}</span>
                                     </p>
                                 </label>
                             </div>

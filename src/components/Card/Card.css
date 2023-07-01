@@ -83,8 +83,7 @@ main{
 }
 .lblHp,
 .lblAtk,
-.lblDef,
-.lblWeight{
+.lblDef{
     min-width: 100px;
     height: 30px;
     padding: 0 5%;
