@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faBurst } from '@fortawesome/free-solid-svg-icons';
 import { faShield } from '@fortawesome/free-solid-svg-icons';
-import { faWeightScale } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import './Card.css';
@@ -52,8 +51,8 @@ const Card = () => {
         setName(search);
         setError(null);
         setLoading(false);
-    }
-    
+    } 
+
     if(pokemon == undefined || !name || error){
         return (
             <>
@@ -63,7 +62,7 @@ const Card = () => {
                         <FontAwesomeIcon icon={faSearch} className='iconFontAwesome search'/>
                     </button>
                 </div>
-                {error && <p className='pError'>{error}</p> }
+                {error && <p className='pError'>{error}</p>}
             </>
         )
     }
