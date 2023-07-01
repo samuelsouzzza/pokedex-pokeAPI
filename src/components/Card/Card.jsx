@@ -13,7 +13,8 @@ import './Card.css';
 
 const Card = () => {
 
-    const [name, setName] = React.useState('');
+
+    const [name, setName] = React.useState('bulbasaur');
     const [search, setSearch] = React.useState(name);
     const [pokemon, setPokemon] = React.useState();
     const [loading, setLoading] = React.useState(false);
@@ -29,10 +30,12 @@ const Card = () => {
                 const json = await response.json();
 
                 setPokemon(json);
+                setButtonState(true);
                 setLoading(false);
             }
             catch{
                 setLoading(false);
+                setButtonState(true);
                 setError('Parece que este pokémon não existe, tente digitar outro nome.');
             }
         }
