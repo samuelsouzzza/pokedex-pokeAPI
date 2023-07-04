@@ -2,7 +2,6 @@ import React from 'react';
 import Card from './components/Card/Card.jsx';
 
 import './App.css';
-
 import logo from './assets/imgs/pokemon.svg';
 
 function App() {
