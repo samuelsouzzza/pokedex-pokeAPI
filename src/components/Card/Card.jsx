@@ -35,7 +35,7 @@ const Card = () => {
             catch{
                 setLoading(false);
                 setButtonState(true);
-                setError('Parece que este pokémon não existe, tente digitar outro nome.');
+                setError('NÃO CONSEGUIMOS ENCONTRAR ESSE POKÉMON, TENTE PROCURAR POR OUTRO NOME.');
             }
         }
         searchPokemon();
@@ -57,7 +57,7 @@ const Card = () => {
         return (
             <>
                 <div className="boxSearch">
-                    <input type="text" placeholder='Pesquisar Pokémon' value={search} onChange={handleWrite}/>
+                    <input type="text" placeholder='Pesquise por um Pokémon' value={search} onChange={handleWrite}/>
                     <button onClick={handleClick} disabled={buttonState} className='btnSearch'>
                         <FontAwesomeIcon icon={faSearch} className='iconFontAwesome search'/>
                     </button>
@@ -70,7 +70,7 @@ const Card = () => {
     return (
         <>
             <div className="boxSearch">
-                <input type="text" placeholder='Pesquisar Pokémon' value={search} onChange={handleWrite}/>
+                <input type="text" placeholder='Pesquise por um Pokémon' value={search} onChange={handleWrite}/>
                 <button onClick={handleClick} disabled={buttonState} className='btnSearch'>
                         <FontAwesomeIcon icon={faSearch} className='iconFontAwesome search'/>
                 </button>
@@ -82,7 +82,7 @@ const Card = () => {
                     <>
                         <header>
                             <span className='idPokemon'>{pokemon.id}</span>
-                            <p className='namePokemon'>{pokemon.name}</p>
+                            <p className='namePokemon'>{pokemon.name.toUpperCase()}</p>
                             <p className='typePokemon'>{pokemon.types[0].type.name}</p>
                         </header>
                         <main>

@@ -115,6 +115,7 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: .5% 0;
 }
 .boxSearch input{
     width: 80%;
@@ -160,4 +161,5 @@ p{
 .pError{
     color: #fff;
     text-align: center;
+    justify-content: start;
 }
