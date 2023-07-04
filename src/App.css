@@ -28,6 +28,7 @@
   .app{
     justify-content: start;
     padding-top: 5%;
+    background-position-x: center;
   }
   .logo{
     max-width: 60%;
