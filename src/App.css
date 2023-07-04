@@ -20,6 +20,16 @@
   background-size: cover;
 }
 .logo{
-  max-width: 300px;
+  max-width: 25%;
   margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .app{
+    justify-content: start;
+    padding-top: 5%;
+  }
+  .logo{
+    max-width: 60%;
+  }
 }
