@@ -7,7 +7,7 @@
   font-family: 'Noto Sans';
 }
 *::selection{
-  background-color: #f00;
+  background-color: #306bb3;
 }
 .app{
   display: flex;
@@ -16,6 +16,10 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-image: url('./assets/imgs/backgroundPokemon2.jpg');
+  background-image: url('./assets/imgs/background.jpg');
   background-size: cover;
+}
+.logo{
+  max-width: 300px;
+  margin-bottom: 1%;
 }

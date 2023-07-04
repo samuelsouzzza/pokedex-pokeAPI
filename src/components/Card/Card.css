@@ -8,12 +8,12 @@
 }
 .containerCard,
 .pError{
-    background-color: #ff404031;
+    background-color: #ffcd0536;
     backdrop-filter: blur(3px);
     max-height: auto;
     width: 300px;
     padding: .7%;
-    border: 1px solid #f00;
+    border: 1px solid #306bb3;
     border-radius: 5px;
     height: 325px;
 }
@@ -39,20 +39,20 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #ff4040;
+    color: #306bb3;
 }
 .namePokemon{
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight: normal;
     align-self: center;
     justify-self: center;
     text-transform: capitalize;
     color: #fff;
-    font-weight: bold;
 }
 .typePokemon{
     background-color: #fff;
-    color: #ff4040;
+    font-weight: bold;
+    color: #306bb3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,9 +91,9 @@ main{
     flex-wrap: nowrap;
     justify-content: center;
     border-radius: 50px;
-    background-color: #ff4040;
+    background-color: #306bb3;
     border: none;
-    border-bottom: 1px solid #f00;
+    border-bottom: 1px solid #00f;
     margin: 10% 0;
     color: #fff;
     margin: 2%;
@@ -119,23 +119,25 @@ p{
 .boxSearch input{
     width: 80%;
     height: 45px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
+    font-style: italic;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #f00;
     color: #fff;
-    border-radius: 5px;
     outline: 0;
     backdrop-filter: blur(3px);
 }
 .boxSearch input::placeholder{
     color: #ffffff71;
 }
+.boxSearch input:focus{
+    border-bottom: 1px solid #00f;
+}
 .btnSearch{
     width: 15%;
     height: 45px;
-    background-color: #FF2400;
+    background-color: #306bb3;
     color: #fff;
     font-size: 1.25rem;
     border: none;
