@@ -82,7 +82,7 @@ const Card = () => {
                     <>
                         <header>
                             <span className='idPokemon'>{pokemon.id}</span>
-                            <p className='namePokemon'>{pokemon.name.toUpperCase()}</p>
+                            <p className='namePokemon' translate='no'>{pokemon.name.toUpperCase()}</p>
                             <p className='typePokemon'>{pokemon.types[0].type.name}</p>
                         </header>
                         <main>
