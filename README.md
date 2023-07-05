@@ -6,7 +6,7 @@
 
 Este é um aplicativo web desenvolvido em ReactJS que utiliza a PokéAPI (https://pokeapi.co/) como fonte de dados. Ele permite que os usuários pesquisem o nome de um Pokémon e obtenham informações detalhadas sobre ele, incluindo ID, nome, tipo, HP, ataque e defesa.
 
-Você pode acessar o aplicativo no seguinte link: https://main--mellifluous-palmier-3bf2a3.netlify.app/
+Você pode acessar o aplicativo no seguinte link: https://pokedex-pokeapi-samuelsouzzza.netlify.app/
 
 
 
