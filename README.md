@@ -14,8 +14,6 @@ Você pode acessar o aplicativo no seguinte link: https://main--mellifluous-palm
 
 ![App Screenshot](https://raw.githubusercontent.com/samuelsouzzza/pokeAPI/main/screenshots/print2.png?token=GHSAT0AAAAAACEWYBGUUVISNAGUCPJYVOYAZFEXX2Q)
 
-![App Screenshot](https://raw.githubusercontent.com/samuelsouzzza/pokeAPI/main/screenshots/print1.png?token=GHSAT0AAAAAACEWYBGUQ7EKMUHAUVELOIT2ZFEXW4Q)
-
 
 
 ## Funcionalidades
