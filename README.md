@@ -28,7 +28,7 @@ Os usuários podem digitar o nome de um Pokémon na caixa de pesquisa e obter in
 
 ## Como Usar
 
-Basta acessar o seguinte link: https://main--mellifluous-palmier-3bf2a3.netlify.app/
+Basta acessar o seguinte link: https://pokedex-pokeapi-samuelsouzzza.netlify.app/
 
 No aplicativo, digite o nome de um Pokémon na caixa de pesquisa e clique no botão de pesquisa. As informações do Pokémon serão exibidas na tela.
 
@@ -53,7 +53,7 @@ Aqui estão alguns recursos úteis que foram utilizados no desenvolvimento deste
 
 SAMUEL RIBEIRO DE SOUZA
 
-- GitHub: [@samuelsouzzza](https://www.github.com/octokatherine)
+- GitHub: [@samuelsouzzza](https://www.github.com/samuelsouzzza/)
 - LinkedIn: [@samuelsouzzza](https://www.linkedin.com/in/samuelsouzzza/)
 - Instagram: [@samuel.souzzza](https://www.instagram.com/samuel.souzzza/)
 
