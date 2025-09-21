@@ -61,6 +61,7 @@ const Card = () => {
       <>
         <div className='boxSearch'>
           <input
+            name='inputPokemonName'
             type='text'
             placeholder='Pesquise por um Pokémon'
             value={search}
@@ -99,14 +100,14 @@ const Card = () => {
           <FontAwesomeIcon icon={faSearch} className='iconFontAwesome search' />
         </button>
       </div>
-      {error && <p>{error}</p>}
+      {error && <p className='pError'>{error}</p>}
       <section className='containerCard'>
         {loading && <Loader />}
         {!loading && (
           <>
             <header>
               <span className='idPokemon'>{pokemon.id}</span>
-              <p className='namePokemon' translate='no'>
+              <p className='namePokemon' translate='no' id='teste'>
                 {pokemon.name.toUpperCase()}
               </p>
               <p className='typePokemon'>{pokemon.types[0].type.name}</p>
